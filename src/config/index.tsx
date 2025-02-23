@@ -84,7 +84,7 @@ const riseTestnet = defineChain({
 });
 
 const somniaTestnet = defineChain({
-  id: 50311,
+  id: 50312,
   name: 'Somnia Devnet',
   nativeCurrency: {
     decimals: 18,
@@ -97,8 +97,8 @@ const somniaTestnet = defineChain({
   blockExplorers: {
     default: {
       name: 'Somnia Devnet Explorer',
-      url: 'https://somnia-devnet.socialscan.io/',
-      apiUrl: 'https://somnia-devnet.socialscan.io/api',
+      url: 'https://shannon-explorer.somnia.network/',
+      apiUrl: 'https://shannon-explorer.somnia.network/api',
     },
   },
   contracts: {
