@@ -85,10 +85,10 @@ const riseTestnet = defineChain({
 
 const somniaTestnet = defineChain({
   id: 50312,
-  name: 'Somnia Devnet',
+  name: 'Somnia Testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'Somnia Devnet',
+    name: 'Somnia Testnet',
     symbol: 'STT',
   },
   rpcUrls: {
