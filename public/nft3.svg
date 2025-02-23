@@ -1,0 +1,33 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGlow3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3d00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonBlur">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+  </defs>
+  
+  <!-- Dark background with grid effect -->
+  <rect width="400" height="400" fill="#0A0A1F"/>
+  <path d="M0 0h400v400h-400z" fill="#0A0A1F" fill-opacity="0.9"/>
+  <path d="M40 0v400 M80 0v400 M120 0v400 M160 0v400 M200 0v400 M240 0v400 M280 0v400 M320 0v400 M360 0v400" stroke="#1a1a3a" stroke-width="0.5"/>
+  <path d="M0 40h400 M0 80h400 M0 120h400 M0 160h400 M0 200h400 M0 240h400 M0 280h400 M0 320h400 M0 360h400" stroke="#1a1a3a" stroke-width="0.5"/>
+  
+  <!-- Main diamond frame -->
+  <path d="M200,80 L320,200 L200,320 L80,200 Z" 
+        fill="none" stroke="url(#neonGlow3)" stroke-width="4" filter="url(#neonBlur)"/>
+  
+  <!-- Master crown symbol -->
+  <path d="M160,180 L200,120 L240,180 L260,150 L240,220 L160,220 L140,150 Z" 
+        fill="none" stroke="#ff3d00" stroke-width="3" filter="url(#neonBlur)"/>
+  
+  <!-- Master text -->
+  <text x="200" y="190" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle" filter="url(#neonBlur)">MASTER</text>
+  <text x="200" y="220" font-family="Arial" font-size="18" fill="#ffcc00" text-anchor="middle">LEO COLLECTION</text>
+  
+  <!-- Decorative elements -->
+  <path d="M140,200 C180,180 220,180 260,200" stroke="#ff3d00" stroke-width="1" opacity="0.5"/>
+  <path d="M140,240 C180,220 220,220 260,240" stroke="#ff3d00" stroke-width="1" opacity="0.5"/>
+</svg>
