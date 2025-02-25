@@ -29,57 +29,6 @@ import {
 import Image from "next/image";
 import { useAccount } from 'wagmi';
 import Link from "next/link";
-// Mock data for demonstration
-const transactions = [
-  {
-    id: "1",
-    type: "Sell",
-    tokenFrom: {
-      symbol: "MANTA",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/13631.png",
-    },
-    tokenTo: {
-      symbol: "ETH",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
-    },
-    amount: "0.5 MANTA",
-    amountTo: "750 ETH",
-    date: "2023-05-10T14:30:00Z",
-    status: "Completed",
-  },
-  {
-    id: "2",
-    type: "Buy",
-    tokenFrom: {
-      symbol: "ETH",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
-    },
-    tokenTo: {
-      symbol: "MANTA",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/13631.png",
-    },
-    amount: "100 ETH",
-    amountTo: "25 MANTA",
-    date: "2023-05-09T10:15:00Z",
-    status: "Completed",
-  },
-  {
-    id: "3",
-    type: "Sell",
-    tokenFrom: {
-      symbol: "MANTA",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/13631.png",
-    },
-    tokenTo: {
-      symbol: "ETH",
-      logo_url: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
-    },
-    amount: "2 MANTA",
-    amountTo: "100 ETH",
-    date: "2023-05-08T18:45:00Z",
-    status: "Completed",
-  },
-];
 
 export default function History() {
   const [filter, setFilter] = useState("all");
@@ -104,7 +53,7 @@ export default function History() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const API_URL = `${process.env.NEXT_PUBLIC_BACK_END_ADDRESS}/v1/token/txs?addr=${address}`;
+      const API_URL = `${process.env.NEXT_PUBLIC_BACK_END_ADDRESS}/v1/token/txs?addr=${address}&chain=stt`;
       try {
         const res = await fetch(API_URL);
         if (!res.ok) {
