@@ -183,7 +183,7 @@ export default function History() {
                 </TableCell>
                 <TableCell className="text-right text-white">
                   <Link
-                    href={`https://sepolia-explorer.metisdevops.link/tx/${tx.tx_hash}`}
+                    href={`https://somnia-devnet.socialscan.io/tx/${tx.tx_hash}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
